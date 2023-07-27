@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,62 @@
         }
     </script>
 </head>
-<body>
-    
+<body class="font-lato lg:my-14">
+    <header class="max-w-screen-xl mx-auto">
+        <!-- Nav bar section -->
+        <nav class="lg:my-14 ">
+            <div
+                class="bg-[#F85559] rounded-l-full rounded-r-full lg:h-[80px] flex lg:gap-[217px] justify-center items-center pb-[2px] invisible lg:visible">
+                <ul class="flex lg:gap-8 items-center font-medium text-white">
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>About Us</li>
+                    </a>
+                    <a href="">
+                        <li>Shop</li>
+                    </a>
+                    <a href="">
+                        <li>All Fruits</li>
+                    </a>
+                </ul>
+                <div class="flex lg:gap-3 justify-center items-center">
+                    <img src="./images/logo.png" alt="">
+                    <h3 class="lg:text-2xl font-bold text-black lg:text-white">Fruit Burst</h3>
+                </div>
+                <input
+                    class="lg:w-80 lg:h-12 lg:px-3 hover:bg-sky-200 flex items-center  pb-1 bg-white rounded-l-full rounded-r-full text-start"
+                    type="text" placeholder="Search......">
+                <a class="absolute ml-[1180px] mt-1" href=""><img class="w-7 h-7" src="./images/search.png" alt=""></a>
+            </div>
+            <!-- Responsive Nav bar for small devices -->
+            <div class="flex  items-center lg:invisible justify-between mx-4 -mt-10">
+                <div class="flex items-center gap-2">
+                    <img src="./images/logo.png" alt="">
+                    <h3 class="text-2xl font-bold text-black">Fruit Burst</h3>
+                </div>
+                <div class="dropdown dropdown-left">
+                    <label tabindex="0" class=" m-1"><img class="w-10 rounded hover:bg-gray-200  h-10"
+                            src="./images/menu.png" alt=""></label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-40">
+                        <a class="hover:text-blue-800 hover:bg-blue-300 rounded" href="">
+                            <li>Home</li>
+                        </a>
+                        <a class="hover:text-blue-800 hover:bg-blue-300 rounded" href="">
+                            <li>About Us</li>
+                        </a>
+                        <a class="hover:text-blue-800 hover:bg-blue-300 rounded" href="">
+                            <li>Shop</li>
+                        </a>
+                        <a class="hover:text-blue-800 hover:bg-blue-300 rounded" href="">
+                            <li>All Fruits</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
 </body>
 </html>
